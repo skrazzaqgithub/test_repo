@@ -1,0 +1,18 @@
+class traveller:
+    def __init__(self, name, address):
+        self.name = name
+        self.address = address
+    def display(self, vehicle_name):
+        print(f"Hi, I am {self.name} going by {vehicle_name}")
+    def followers(self, follower_name):
+        print(f"I am {self.name} follwing {follower_name}")
+travellerobj_1 = traveller("abdul", "bengaluru")
+travellerobj_2 = traveller("razzaq", "pune")
+print(travellerobj_1.name, "is from", travellerobj_1.address)
+travellerobj_1.display("4 wheeler")
+print(travellerobj_2.name, "is from", travellerobj_2.address)
+travellerobj_2.display("bike")
+travellerobj_1.followers("mohammad")
+#print(travellerobj_1.address)
+#print(travellerobj_2.name)
+#print(travellerobj_2.address)

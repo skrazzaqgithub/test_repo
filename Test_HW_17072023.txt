@@ -1,0 +1,33 @@
+""" What does this program do ?
+"""
+
+# Implement the helper functions here
+def check_if_2digit(inp):
+    if(inp >= 10 and inp < 100):
+        print("Entered number is 2 digit:", inp)
+
+def check_if_3digit(inp):
+    if(inp >= 100 and inp < 1000):
+        print("Entered number is 3 digit:", inp)
+
+def perform_check(number):  
+    """ This function uses helper functions
+        check_if_2digit
+        check_if_3digit
+        to perform the required operations
+    """
+    check_if_2digit(number)
+    check_if_3digit(number)
+
+def get_number():
+    """ This function prompts the user for a number
+        It returns an integer [ and not a string ]
+    """
+    inp = int(input("Enter your number:"))
+    return inp
+    
+# Main starts from here
+num1 = get_number()
+num2 = get_number()
+perform_check(num1)
+perform_check(num2)

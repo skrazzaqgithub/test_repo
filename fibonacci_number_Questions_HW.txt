@@ -1,0 +1,6 @@
+print first 10 even fibonacci numbers
+
+print first 9 fibonacci numbers
+
+print all 3 digit even fibonacci numbers
+

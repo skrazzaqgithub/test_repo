@@ -1,0 +1,21 @@
+def calculate_mileage(start_odometer, end_odometer, fuel_consumed):
+    distance_traveled = end_odometer - start_odometer
+    mileage = distance_traveled / fuel_consumed
+    return mileage
+def stops(Total_Distance, mileage, Fuel_Tank_Capacity):
+    Total_Fuel_Needed = Total_Distance / mileage
+    Number_of_stops = Total_Fuel_Needed / Fuel_Tank_Capacity 
+    return Number_of_stops
+
+start_odometer = float(input("Enter the starting odometer reading (in miles): "))
+end_odometer = float(input("Enter the ending odometer reading (in miles): "))
+fuel_consumed = float(input("Enter the amount of fuel consumed (in gallons): "))
+Total_Distance = float(input("Enter the total distance:"))
+mileage = float(input("Enter the mileage"))
+Fuel_Tank_Capacity = float(input("Enter the tank capacity"))
+
+mileage = calculate_mileage(start_odometer, end_odometer, fuel_consumed)
+print("The mileage of your car is:", mileage, "miles per gallon")
+
+Number_of_stops = stops(Total_Distance, mileage, Fuel_Tank_Capacity)
+print("Number of stops taken are:", Number_of_stops, "stops per trip")

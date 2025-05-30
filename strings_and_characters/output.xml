@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.1 on win32)" generated="2024-12-09T23:03:31.727248" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotProgram" source="D:\python\strings_and_characters\RobotProgram.robot">
+<test id="s1-t1" name="Valid User Can Login Successfully" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-09T23:03:31.915723" level="INFO">Opening browser 'chrome' to base url 'https://app.qure.ai/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-09T23:03:31.915723" elapsed="2.081535"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-09T23:03:33.997258" level="INFO">Clicking button 'class=Sign-up / Log-in via Email'.</msg>
+<msg time="2024-12-09T23:03:34.172212" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-09T23:03:34.172212" level="FAIL">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF753446CF5+28821]
+	(No symbol) [0x00007FF7533B3880]
+	(No symbol) [0x00007FF75325578A]
+	(No symbol) [0x00007FF75325C2ED]
+	(No symbol) [0x00007FF75325EFCC]
+	(No symbol) [0x00007FF75325F09F]
+	(No symbol) [0x00007FF7532A8C6A]
+	(No symbol) [0x00007FF7532A94AC]
+	(No symbol) [0x00007FF7532F2677]
+	(No symbol) [0x00007FF7532CF33F]
+	(No symbol) [0x00007FF7532EF412]
+	(No symbol) [0x00007FF7532CF0A3]
+	(No symbol) [0x00007FF75329A778]
+	(No symbol) [0x00007FF75329B8E1]
+	GetHandleVerifier [0x00007FF75377FCED+3408013]
+	GetHandleVerifier [0x00007FF75379745F+3504127]
+	GetHandleVerifier [0x00007FF75378B63D+3455453]
+	GetHandleVerifier [0x00007FF75350BDFB+835995]
+	(No symbol) [0x00007FF7533BEB9F]
+	(No symbol) [0x00007FF7533BA854]
+	(No symbol) [0x00007FF7533BA9ED]
+	(No symbol) [0x00007FF7533AA1D9]
+	BaseThreadInitThunk [0x00007FFE255A259D+29]
+	RtlUserThreadStart [0x00007FFE25DCAF38+40]
+</msg>
+<arg>class=Sign-up / Log-in via Email</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-09T23:03:33.997258" elapsed="0.174954">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF753446CF5+28821]
+	(No symbol) [0x00007FF7533B3880]
+	(No symbol) [0x00007FF75325578A]
+	(No symbol) [0x00007FF75325C2ED]
+	(No symbol) [0x00007FF75325EFCC]
+	(No symbol) [0x00007FF75325F09F]
+	(No symbol) [0x00007FF7532A8C6A]
+	(No symbol) [0x00007FF7532A94AC]
+	(No symbol) [0x00007FF7532F2677]
+	(No symbol) [0x00007FF7532CF33F]
+	(No symbol) [0x00007FF7532EF412]
+	(No symbol) [0x00007FF7532CF0A3]
+	(No symbol) [0x00007FF75329A778]
+	(No symbol) [0x00007FF75329B8E1]
+	GetHandleVerifier [0x00007FF75377FCED+3408013]
+	GetHandleVerifier [0x00007FF75379745F+3504127]
+	GetHandleVerifier [0x00007FF75378B63D+3455453]
+	GetHandleVerifier [0x00007FF75350BDFB+835995]
+	(No symbol) [0x00007FF7533BEB9F]
+	(No symbol) [0x00007FF7533BA854]
+	(No symbol) [0x00007FF7533BA9ED]
+	(No symbol) [0x00007FF7533AA1D9]
+	BaseThreadInitThunk [0x00007FFE255A259D+29]
+	RtlUserThreadStart [0x00007FFE25DCAF38+40]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-09T23:03:34.172212" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-09T23:03:34.172212" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=kc-login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-12-09T23:03:34.172212" elapsed="0.000000"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Dashboard - Example.com</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2024-12-09T23:03:34.172212" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-09T23:03:34.172212" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-12-09T23:03:31.915723" elapsed="2.256489">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF753446CF5+28821]
+	(No symbol) [0x00007FF7533B3880]
+	(No symbol) [0x00007FF75325578A]
+	(No symbol) [0x00007FF75325C2ED]
+	(No symbol) [0x00007FF75325EFCC]
+	(No symbol) [0x00007FF75325F09F]
+	(No symbol) [0x00007FF7532A8C6A]
+	(No symbol) [0x00007FF7532A94AC]
+	(No symbol) [0x00007FF7532F2677]
+	(No symbol) [0x00007FF7532CF33F]
+	(No symbol) [0x00007FF7532EF412]
+	(No symbol) [0x00007FF7532CF0A3]
+	(No symbol) [0x00007FF75329A778]
+	(No symbol) [0x00007FF75329B8E1]
+	GetHandleVerifier [0x00007FF75377FCED+3408013]
+	GetHandleVerifier [0x00007FF75379745F+3504127]
+	GetHandleVerifier [0x00007FF75378B63D+3455453]
+	GetHandleVerifier [0x00007FF75350BDFB+835995]
+	(No symbol) [0x00007FF7533BEB9F]
+	(No symbol) [0x00007FF7533BA854]
+	(No symbol) [0x00007FF7533BA9ED]
+	(No symbol) [0x00007FF7533AA1D9]
+	BaseThreadInitThunk [0x00007FFE255A259D+29]
+	RtlUserThreadStart [0x00007FFE25DCAF38+40]
+</status>
+</test>
+<status status="FAIL" start="2024-12-09T23:03:31.727248" elapsed="2.444964"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotProgram">RobotProgram</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

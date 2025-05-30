@@ -1,0 +1,10 @@
+70
+110
+30
+90
+40
+
+ Appending new line
+ Appending new line
+ Appending new line to existing file
+ Appending new line to existing file12399

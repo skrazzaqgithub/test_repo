@@ -1,0 +1,12 @@
+Number = int(input("Enter your Number: "))
+2	num1 = 0
+3	min_num = 100
+4	max_num = 0
+5	for i in range(0, Number, 1):
+6	    if num1[i] < min_num:
+7	        min_num = num1[i]
+8	print("Your Minimum number is : ", min_num)
+9	for i in range(0, Number, 1):
+10	    if num1[i] > max_num:
+11	        max_num = num1[i]
+12	print("Your Minimum number is : ", max_num)

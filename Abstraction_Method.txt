@@ -1,0 +1,16 @@
+from abc import ABC, abstractmethod
+class AbstractDemo(ABC):
+    @abstractmethod
+    def HomeROI(self):
+        none
+    @abstractmethod
+    def VehicleROI(self):
+        none
+class SBI(AbstractDemo):
+    def HomeROI(self):
+        print("Home Loan Interest Rate is 8.4%")
+    def VehicleROI(self):
+        print("Vehicle Loan Interest Rate is 9.5%")
+sbiobj = SBI()
+sbiobj.HomeROI()
+sbiobj.VehicleROI()

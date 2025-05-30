@@ -1,0 +1,1 @@
+storage capacity management is vital to ensure that an IT organisation keeps up with business growth and can provide customers with the services they expect. Unexpected spikes in SAN capacity requirements can create headaches for the IT department and potentially threaten

@@ -1,0 +1,28 @@
+Job description
+skrazzaq2727@gmail.com
+skabdul2259@gmail.com
+Technical Skills (Must to have):
+
+Good expertise in Unix and SQL DB(Oracle / MySql)
+Experience in API testing.
+Knowledge of DevOps tools like Jenkins, Ansible, Jira and X-Ray
+Protocol and Packet analyzer (TCPDUMP, Ethereal)
+Good exposure to Load runner, jMeter and other performance tools
+Debugging skills with the necessary tools like Valgrind and Halgrind
+Exposure security tools would be an added advantage (Burp, Nessus, Acunetix)
+API Automation with rest assurance is good to have.
+Roles and Responsibilities:
+
+Understanding the requirements and helping in formulating the test strategies
+Test Bed Preparation
+System Testing
+Test Design (Functional Testing)
+Knowledge in Software testing Life cycles and Software Development Life Cycle
+Able to elicit technical specification and requirements independently
+Adaptable with Good Communication skills
+Understanding of Agile methodologies and should be aligned to the sprint planning.
+RCA and defect trend analysis
+Knowledge of Test estimation
+Project monitoring and Tracking will be an added advantage
+User Requirement Understanding and proposing changes
+Solution Validation Knowledge
