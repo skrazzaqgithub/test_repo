@@ -15,7 +15,7 @@ if response.status_code == 200:
             # coordinates = station['coordinates']
         properties = station['properties']
         features = station['geometry']
-        if properties.get('timeZone') == "America/New_York":
+        if properties.get('timeZone') == "Pacific/Honolulu":
             print(station['id'])
             coordinates = features['coordinates']
             print(properties['timeZone'])

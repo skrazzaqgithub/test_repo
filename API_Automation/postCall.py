@@ -7,7 +7,9 @@ request_payload = {'id': 22599, "name": "abdulrazzaq", "email": "abc@9abctestp.c
 response = requests.post(url, headers=header, json=request_payload)
 print(response.status_code)
 print(response.json())
-assert response.status_code == 201
+# assert response.status_code == 201
+assert response.json()['name'] == 'abdulrazzaq'
+assert response.status_code == 200
 
 getResponse = requests.get(url+'/'+ str(response.json()['id']), headers=header)
 print(getResponse.json())

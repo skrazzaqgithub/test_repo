@@ -15,13 +15,15 @@
 
 def fibonacci(n):
     fib = [0,1]
-    while True:
+    while n>=1:
         next_fib = fib[-1] + fib[-2]
         if next_fib>n:
-            break
-        fib.append(next_fib)
+            if next_fib%2==0:
+                print("Not Prime")
+            else:
+                fib.append(next_fib)
     return fib
-n = 40
+n = 90
 print(fibonacci(n))
 
 # # Initialize the first two Fibonacci numbers
