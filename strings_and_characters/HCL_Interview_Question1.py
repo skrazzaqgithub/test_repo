@@ -50,5 +50,5 @@ for row in rows:
 # Output the grouped results in the desired format
 for date, addresses in grouped.items():
     print(date)
-    # for address in addresses:
-    #     print(f"  {address}")
+    for address in addresses:
+        print(f"  {address}")

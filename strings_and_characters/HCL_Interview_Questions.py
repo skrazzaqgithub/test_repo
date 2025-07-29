@@ -2,15 +2,13 @@
 # Input : [1,2,3,4,5,7,8,9]
 # Output : 6
 
-# input1 = [1, 2, 3, 4, 5, 7, 8, 9]
-# # count = 0
-# input2 = []
-# for i in range(input1):
-#     if i not in input2:
-#         input2.append(i)
-#         # if input2 != input1:
-#         #     input2[5] = 6
-# print(input2)
+input1 = [1, 2, 3, 4, 5, 7, 8, 9]
+# count = 0
+input2 = []
+for i in range(1,10):
+    if i not in input2:
+        input2.append(i)
+print(input2)
 
 # Remove Duplicate Characters from a String without using set.
 # Input : “banana”
@@ -36,17 +34,17 @@
 # print(len(frequency))
 # print(frequency)
 # if frequency[key] == key[0]:
-def count_digit_occurrence(start, end, digit):
-    count = 0
-    for num in range(start, end + 1):
-        count += str(num).count(digit)
-        # if num == str(33):
-        #     return 6
-    return count-1
-
-# Example usage
-start = 30
-end = 35
-digit = '3'
-result = count_digit_occurrence(start, end, digit)
-print(result)
+# def count_digit_occurrence(start, end, digit):
+#     count = 0
+#     for num in range(start, end + 1):
+#         count += str(num).count(digit)
+#         # if num == str(33):
+#         #     return 6
+#     return count-1
+#
+# # Example usage
+# start = 30
+# end = 35
+# digit = '3'
+# result = count_digit_occurrence(start, end, digit)
+# print(result)
