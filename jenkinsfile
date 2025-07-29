@@ -1,34 +1,36 @@
 pipeline {
     agent any
     stages {
+<<<<<<< HEAD
         stage('Checkout') {
             steps {
                 git 'https://github.com/skrazzaqgithub/test_repo.git'
             }
+=======
+        stage('Checkout Code') {
+            steps { git 'https://github.com/skrazzaqgithub/test_repo.git' }
+>>>>>>> new-feature-branch
         }
         stage('Install Dependencies') {
             steps {
                 sh 'pip install --upgrade pip'
-                sh 'pip install -r requirements.txt'
+                sh 'pip install --user -r requirements.txt'  // use --user, as system site-packages may not be writable
             }
         }
         stage('Lint') {
             steps {
-                sh 'flake8 .'  // This will fail the build if lint errors exist
+                sh 'export PATH=$PATH:$HOME/.local/bin && flake8 .'
             }
         }
         stage('Test') {
             steps {
-                sh 'pytest tests/'  // Run all tests inside the tests/ directory
+                sh 'export PATH=$PATH:$HOME/.local/bin && pytest tests/'
             }
         }
-    }
-    post {
-        success {
-            echo 'Build succeeded, lint and tests passed!'
-        }
-        failure {
-            echo 'Build failed: Check lint or test errors.'
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+            }
         }
     }
 }
